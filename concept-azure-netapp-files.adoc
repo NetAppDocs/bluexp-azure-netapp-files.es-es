@@ -29,7 +29,7 @@ Azure NetApp Files permite a las empresas migrar y ejecutar sus aplicaciones ese
 
 == Características adicionales en BlueXP
 
-* Migre datos de NFS o SMB a Azure NetApp Files directamente desde BlueXP (anteriormente Cloud Manager). Las migraciones de datos se realizan a través del servicio Cloud Sync de NetApp.
+* Migra los datos de NFS o SMB a Azure NetApp Files directamente desde BlueXP. Las migraciones de datos se realizan a través del servicio Cloud Sync de NetApp.
 +
 https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["Obtenga más información acerca de Cloud Sync"^]
 
