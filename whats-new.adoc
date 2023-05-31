@@ -26,8 +26,8 @@ Descubra las novedades de Azure NetApp Files en BlueXP.
 
 Un nuevo servicio de plantillas de aplicaciones le permite configurar una plantilla de volumen para Azure NetApp Files. La plantilla debería facilitar el trabajo porque ciertos parámetros de volumen ya se definirán en la plantilla, como el pool de capacidad, el tamaño, el protocolo, el vnet y la subred donde debería residir el volumen, entre otros. Cuando ya hay un parámetro predefinido, puede saltar al siguiente parámetro de volumen.
 
-* https://docs.netapp.com/us-en/cloud-manager-app-template/concept-resource-templates.html["Obtenga más información sobre las plantillas de aplicaciones y sobre cómo utilizarlas en su entorno"^]
-* https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-create-volumes.html["Aprenda a crear un volumen de Azure NetApp Files a partir de una plantilla"]
+* https://docs.netapp.com/us-en/bluexp-remediation/concept-resource-templates.html["Obtenga más información sobre las plantillas de aplicaciones y sobre cómo utilizarlas en su entorno"^]
+* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-volumes.html["Aprenda a crear un volumen de Azure NetApp Files a partir de una plantilla"]
 
 
 
@@ -40,7 +40,7 @@ Un nuevo servicio de plantillas de aplicaciones le permite configurar una planti
 
 Ahora puede cambiar de forma dinámica el nivel de servicio de un volumen para satisfacer las necesidades de la carga de trabajo y optimizar los costes. El volumen se mueve al otro pool de capacidad sin afectar al volumen.
 
-https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-volumes.html#change-the-volumes-service-level["Aprenda a cambiar el nivel de servicio de un volumen"].
+https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-manage-volumes.html#change-the-volumes-service-level["Aprenda a cambiar el nivel de servicio de un volumen"].
 
 
 
