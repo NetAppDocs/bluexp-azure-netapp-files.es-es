@@ -97,7 +97,7 @@ image:screenshot_define_anf_vol_from_template.png["Captura de pantalla que muest
 +
 *Nota:* puede hacer clic en la casilla de verificación *Mostrar parámetros de sólo lectura* para mostrar todos los campos bloqueados por la plantilla si desea ver los valores de esos parámetros. De forma predeterminada, estos campos predefinidos están ocultos y sólo se muestran los campos que debe completar.
 
-. Agregue valores para todos los parámetros que no estén codificados de forma rígida desde la plantilla. Consulte <<Creating volumes,crear volúmenes>> Para obtener detalles sobre todos los parámetros que se necesitan completar en la implementación de un volumen de Azure NetApp Files.
+. Agregue valores para todos los parámetros que no estén codificados de forma rígida desde la plantilla. Consulte <<Cree volúmenes,cree volúmenes>> Para obtener detalles sobre todos los parámetros que se necesitan completar en la implementación de un volumen de Azure NetApp Files.
 . Haga clic en *Ejecutar plantilla* después de definir todos los parámetros necesarios para este volumen.
 
 
