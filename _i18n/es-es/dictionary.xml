@@ -3,7 +3,6 @@
   <block id="fdd2d4e114c9279ba4b9834452d83e5e" category="summary">BlueXP necesita permisos para configurar y administrar Azure NetApp Files. Puede conceder los permisos necesarios a una cuenta de Azure creando y configurando una aplicación de Azure Active Directory y obteniendo las credenciales de Azure que BlueXP necesita.</block>
   <block id="9f6195430155a4712fbd4733de1876ca" category="doc">Configure una aplicación de Azure AD</block>
   <block id="888f309d00a2cbabb98990f75343ace6" category="paragraph">BlueXP necesita permisos para configurar y administrar Azure NetApp Files. Puede conceder los permisos necesarios a una cuenta de Azure creando y configurando una aplicación de Azure Active Directory (AD) y obteniendo las credenciales de Azure que BlueXP necesita.</block>
-  <block id="250e9326aa08333e3f698ab1ba29c77e" category="section-title">Cree la aplicación AD</block>
   <block id="9a4aebca22c886eb8bdac5c93ce53cca" category="paragraph">Cree una aplicación de Azure AD y una entidad de servicio que BlueXP pueda usar para controlar el acceso basado en roles.</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">Antes de empezar</block>
   <block id="9e0b4c608c2ed027fef07ddc68aae407" category="inline-link">Documentación de Microsoft Azure: Permisos necesarios</block>
@@ -33,7 +32,6 @@
   <block id="950ba75831d4d2d13e40a65143eb8494" category="paragraph"><block ref="950ba75831d4d2d13e40a65143eb8494" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">Resultado</block>
   <block id="c8bbf58eacf91dbdd1fe26d0891f53b2" category="paragraph">La aplicación AD está configurada y debe haber copiado el ID de la aplicación (cliente), el ID del directorio (arrendatario) y el valor del secreto del cliente. Necesita introducir esta información en BlueXP cuando agrega un entorno de trabajo de Azure NetApp Files.</block>
-  <block id="50cb14609454c06c47e95e9d8a56adb5" category="section-title">Asigne la aplicación a una función</block>
   <block id="4c52768b52ca020200e5a926929d951d" category="paragraph">Debe enlazar el principal del servicio con la suscripción a Azure y asignarle una función personalizada que tenga los permisos necesarios.</block>
   <block id="c7fd7910cc533c79ed570ea74704425d" category="inline-link">Crear un rol personalizado en Azure</block>
   <block id="ef25c1a0b85945d65e29d5346a5dd23f" category="list-text"><block ref="e0180ab247b74a9d02ca0dcc4d9ef2d3" category="inline-link-rx"></block>.</block>
@@ -103,19 +101,9 @@
   <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">Usar el chat en el producto</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link"></block>
   <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">Envíe un caso no técnico en<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
-  <block id="2433628c53fed80ea9d352a1bcd9ce45" category="summary">Empiece rápidamente siguiendo estos pasos o desplácese hacia abajo hasta las secciones restantes para obtener todos los detalles.</block>
-  <block id="5bfad4d83a647919018a0bb53b602ce1" category="doc">Inicio rápido de Azure NetApp Files</block>
-  <block id="597907fb22ffd6d5d99abe19205161d6" category="paragraph">Comience rápidamente siguiendo estos pasos o siguiendo los enlaces para obtener información completa.</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">Uno</block>
-  <block id="467ae1621770a63d57b4f6f548f0e4db" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Configure una aplicación de Azure AD</block>
   <block id="5ef8b3581bd08eb7bd7df9da47cee4d9" category="paragraph">En Azure, conceda permisos a una aplicación Azure AD y copie el ID de la aplicación (cliente), el ID de directorio (inquilino) y el valor de un secreto de cliente.</block>
-  <block id="4a6368bcf7e7a78b87f63c25a1738dcd" category="inline-link-macro">Aprenda a configurar una aplicación de Azure AD</block>
-  <block id="907e63fbdb2ca8abc79587ef5c9c9829" category="paragraph"><block ref="44b9747affc4b1ae04a7846ac71363e4" category="inline-link-macro-rx"></block>.</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">Dos</block>
-  <block id="23264ef18907414c2a02af5eb5d5b56a" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> Crear un entorno de trabajo de Azure NetApp Files</block>
-  <block id="fa52f608cc50f582873e04542e1b242b" category="paragraph">En BlueXP, haga clic en *Agregar entorno de trabajo* &gt; *Microsoft Azure* &gt; *Azure NetApp Files* y, a continuación, proporcione detalles sobre la aplicación AD.</block>
-  <block id="328958ba41a282fb8b8b971eb10845bd" category="inline-link-macro">Aprenda a crear un entorno de trabajo</block>
-  <block id="75aec57e5da1cc40dc30b7d1be476ab4" category="paragraph"><block ref="87d286565b204dd2a8d4bf83463a6fe9" category="inline-link-macro-rx"></block>.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">Avisos legales</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">Los avisos legales proporcionan acceso a las declaraciones de copyright, marcas comerciales, patentes y mucho más.</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">Derechos de autor</block>
@@ -128,7 +116,6 @@
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">Los archivos de notificación proporcionan información sobre los derechos de autor y las licencias de terceros que se utilizan en software de NetApp.</block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">Aviso para BlueXP</block>
   <block id="00cac13dd28e1d8ca100e2d8ab02878c" category="summary">Después de configurar el entorno de trabajo, puede gestionar cuentas de Azure NetApp Files, pools de capacidad, volúmenes y snapshots.</block>
-  <block id="a420aa39e55724ac60bb395b9bf12764" category="doc">Gestione volúmenes para Azure NetApp Files</block>
   <block id="a2669b974873fd7c51079b5fcd7d7946" category="paragraph">Puede gestionar los volúmenes existentes a medida que cambien sus necesidades de almacenamiento. Es posible editar volúmenes, cambiar el nivel de servicio de un volumen, gestionar copias de Snapshot y eliminar volúmenes.</block>
   <block id="333d9261c295516441352ec57f1fbd5a" category="section-title">Edite el tamaño y las etiquetas de un volumen</block>
   <block id="8cbb6213062bff0f8ae5d9232049a4ae" category="paragraph">Después de crear un volumen, puede modificar su tamaño y sus etiquetas en cualquier momento.</block>
@@ -154,7 +141,6 @@
   <block id="0dedd92db5a9dbde64f4da7d6f9d44b2" category="list-text">Pase el ratón sobre el volumen y haga clic en *Eliminar*.</block>
   <block id="085b0943196ae7c43e0a95af45bc731f" category="list-text">Confirme que desea eliminar el volumen.</block>
   <block id="af08318aa95b670c097bf944ab12d208" category="summary">Después de configurar el entorno de trabajo, puede crear cuentas de Azure NetApp Files, pools de capacidad y volúmenes.</block>
-  <block id="ba0aa3e7264cbd8d5a1204a3f3d868cc" category="doc">Cree y monte volúmenes para Azure NetApp Files</block>
   <block id="1c27e11c5e65b93611e6f5ce640f8184" category="section-title">Cree volúmenes</block>
   <block id="15b71829402124199d38fc483f8a71b5" category="paragraph">Es posible crear volúmenes de NFS o SMB en una cuenta de Azure NetApp Files nueva o existente.</block>
   <block id="efc4120a3fbfbea33245fb931c324492" category="inline-xref">estos pasos</block>
@@ -314,7 +300,6 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Comunidad de NetApp</block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">Blog de BlueXP</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Seminarios web sobre el cloud</block>
-  <block id="6186e185b0ea9b1c5909f6190ea935aa" category="section-title">Agregue las credenciales a BlueXP</block>
   <block id="6da49039903bd37fcbedcd3b748acd84" category="paragraph">Al crear el entorno de trabajo de Azure NetApp Files, se le pedirá que seleccione las credenciales asociadas al principal del servicio. Debe añadir estas credenciales a BlueXP antes de crear el entorno de trabajo.</block>
   <block id="b019ab068deba8494415cbd226ca0c4e" category="list-text">En la parte superior derecha de la consola de BlueXP, haga clic en el icono Configuración y seleccione *credenciales*.</block>
   <block id="be9d7b7687f0c55f7e65f14cd2b0f530" category="inline-image-macro">Captura de pantalla que muestra el icono Configuración en la parte superior derecha de la consola BlueXP.</block>
@@ -446,4 +431,13 @@
   <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">Obtenga soporte para un servicio de archivos de proveedores de cloud</block>
   <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">Para obtener soporte técnico relacionado con un servicio de archivos del proveedor de cloud, su infraestructura o cualquier solución que utilice el servicio, consulte «Obtener ayuda» en la documentación de BlueXP para ese producto.</block>
   <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">Para recibir soporte técnico específico sobre BlueXP y sus soluciones y servicios de almacenamiento, use las opciones de soporte descritas a continuación.</block>
+  <block id="0e9444646fd7a9680fc38b22818537e3" category="section-title">Paso 1: Crear la aplicación AD</block>
+  <block id="fb9a62d97d21e431e752501f84624d12" category="section-title">Paso 2: Asigna la aplicación a un rol</block>
+  <block id="8aa26a83223c9e21349efd7c3717ce88" category="section-title">Paso 3: Añade las credenciales a BlueXP</block>
+  <block id="a411739869aa60f9730ad4b362f8561a" category="summary">Comience a usar Azure NetApp Files configurando una aplicación de Azure Active Directory y creando un entorno de trabajo.</block>
+  <block id="65ce4dce26160be29539699c6623e379" category="doc">Flujo de trabajo inicial</block>
+  <block id="916f4838efcb3a299051cc70e41f521e" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> <block ref="ed69a3c57e90df42781856a93d94fa32" category="inline-link-macro-rx"></block></block>
+  <block id="f952808a17fec1373e3f634132b93787" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> <block ref="b5471f633d6bbd5984c5b9bab2234762" category="inline-link-macro-rx"></block></block>
+  <block id="b8d5d2846f8945e381075b2ce9a76df4" category="paragraph">En BlueXP, haz clic en *Agregar entorno de trabajo* &gt; *Microsoft Azure* &gt; *Azure NetApp Files* y, a continuación, proporciona detalles sobre la aplicación AD.</block>
+  <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Novedades</block>
 </blocks>
