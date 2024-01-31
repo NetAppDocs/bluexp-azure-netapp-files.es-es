@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-quick-start.html 
 keywords: set up azure netapp files, quick start 
-summary: Comience a usar Azure NetApp Files configurando una aplicación de Azure Active Directory y creando un entorno de trabajo. 
+summary: Comience a usar Azure NetApp Files configurando una aplicación Microsoft Entra y creando un entorno de trabajo. 
 ---
 = Flujo de trabajo inicial
 :hardbreaks:
@@ -14,11 +14,11 @@ summary: Comience a usar Azure NetApp Files configurando una aplicación de Azur
 
 
 [role="lead"]
-Comience a usar Azure NetApp Files configurando una aplicación de Azure Active Directory y creando un entorno de trabajo.
+Comience a usar Azure NetApp Files configurando una aplicación Microsoft Entra y creando un entorno de trabajo.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] link:task-set-up-azure-ad.html["Configure una aplicación de Azure AD"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] link:task-set-up-azure-ad.html["Configurar una aplicación Microsoft Entra"]
 [role="quick-margin-para"]
-En Azure, conceda permisos a una aplicación Azure AD y copie el ID de la aplicación (cliente), el ID de directorio (inquilino) y el valor de un secreto de cliente.
+Desde Azure, otorgue permisos a una aplicación de Microsoft Entra y copie el ID de aplicación (cliente), el ID de directorio (inquilino) y el valor de un secreto de cliente.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] link:task-create-working-env.html["Crear un entorno de trabajo de Azure NetApp Files"]
 [role="quick-margin-para"]
