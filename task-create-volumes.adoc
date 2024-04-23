@@ -22,8 +22,6 @@ Después de configurar el entorno de trabajo, puede crear cuentas de Azure NetAp
 
 Es posible crear volúmenes de NFS o SMB en una cuenta de Azure NetApp Files nueva o existente.
 
-Una función de BlueXP denominada "plantillas" permite crear volúmenes optimizados para los requisitos de carga de trabajo de determinadas aplicaciones, como bases de datos o servicios de streaming. Si su organización ha creado plantillas de volumen que debe utilizar, siga <<Crear volúmenes a partir de plantillas,estos pasos>>.
-
 .Antes de empezar
 * Si desea utilizar SMB, debe haber configurado DNS y Active Directory.
 * Cuando planee crear un volumen SMB, debe tener un servidor de Windows Active Directory disponible para el que se pueda conectar. Deberá introducir esta información al crear el volumen.
@@ -69,46 +67,6 @@ image:screenshot_anf_smb.gif["Captura de pantalla de los campos necesarios para 
 El nuevo volumen se agrega al entorno de trabajo.
 
 Continúe con <<Monte los volúmenes,montaje del volumen de cloud>>.
-
-
-
-== Crear volúmenes a partir de plantillas
-
-Si su organización ha creado plantillas de volúmenes de Azure NetApp Files para poder implementar volúmenes optimizados para los requisitos de cargas de trabajo de determinadas aplicaciones, siga los pasos de esta sección.
-
-La plantilla debería facilitar el trabajo porque ciertos parámetros de volumen ya se definirán en la plantilla, como el pool de capacidad, el tamaño, el protocolo, el vnet y la subred donde debería residir el volumen, entre otros. Cuando ya hay un parámetro predefinido, puede saltar al siguiente parámetro de volumen.
-
-.Pasos
-. En la página lienzo, haga clic en el entorno de trabajo Azure NetApp Files en el que desea aprovisionar un volumen.
-. Haga clic en image:screenshot_gallery_options.gif["Botón más"] > *Añadir volumen de plantilla*.
-+
-image:screenshot_template_add_vol_anf.png["Captura de pantalla que muestra cómo añadir un volumen nuevo de una plantilla."]
-
-. En la página _Select Template_, seleccione la plantilla que desea utilizar para crear el volumen y haga clic en *Siguiente*.
-+
-image:screenshot_select_template_anf.png["Captura de pantalla de las plantillas de aplicación disponibles."]
-
-+
-Aparece la página _define Parameters_.
-
-+
-image:screenshot_define_anf_vol_from_template.png["Captura de pantalla que muestra una plantilla en blanco que debe rellenar para crear un volumen."]
-
-+
-*Nota:* puede hacer clic en la casilla de verificación *Mostrar parámetros de sólo lectura* para mostrar todos los campos bloqueados por la plantilla si desea ver los valores de esos parámetros. De forma predeterminada, estos campos predefinidos están ocultos y sólo se muestran los campos que debe completar.
-
-. Agregue valores para todos los parámetros que no estén codificados de forma rígida desde la plantilla. Consulte <<Cree volúmenes,cree volúmenes>> Para obtener detalles sobre todos los parámetros que se necesitan completar en la implementación de un volumen de Azure NetApp Files.
-. Haga clic en *Ejecutar plantilla* después de definir todos los parámetros necesarios para este volumen.
-
-
-.Resultado
-BlueXP aprovisiona el volumen y muestra una página para que pueda ver el progreso.
-
-image:screenshot_template_creating_resource_anf.png["Captura de pantalla que muestra el progreso de la creación de un nuevo volumen a partir de la plantilla."]
-
-A continuación, se añade el nuevo volumen al entorno de trabajo.
-
-Continúe con el montaje del volumen de cloud.
 
 
 

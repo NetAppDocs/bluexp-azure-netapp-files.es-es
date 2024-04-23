@@ -128,8 +128,6 @@
   <block id="af08318aa95b670c097bf944ab12d208" category="summary">Después de configurar el entorno de trabajo, puede crear cuentas de Azure NetApp Files, pools de capacidad y volúmenes.</block>
   <block id="1c27e11c5e65b93611e6f5ce640f8184" category="section-title">Cree volúmenes</block>
   <block id="15b71829402124199d38fc483f8a71b5" category="paragraph">Es posible crear volúmenes de NFS o SMB en una cuenta de Azure NetApp Files nueva o existente.</block>
-  <block id="efc4120a3fbfbea33245fb931c324492" category="inline-xref">estos pasos</block>
-  <block id="890592abc0c43fcc710edb1dbdeaf2b3" category="paragraph">Una función de BlueXP denominada "plantillas" permite crear volúmenes optimizados para los requisitos de carga de trabajo de determinadas aplicaciones, como bases de datos o servicios de streaming. Si su organización ha creado plantillas de volumen que debe utilizar, siga <block ref="841f2986c591e442944fbc4b9e18c81f" category="inline-xref-macro-rx"></block>.</block>
   <block id="871a29db0a928b46295d82cee2357c13" category="list-text">Si desea utilizar SMB, debe haber configurado DNS y Active Directory.</block>
   <block id="943219d5074bb5ad25a6a5caf2ffdd2a" category="list-text">Cuando planee crear un volumen SMB, debe tener un servidor de Windows Active Directory disponible para el que se pueda conectar. Deberá introducir esta información al crear el volumen.</block>
   <block id="3bf992a109f2a93d6d964ab2c501e805" category="list-text">Abra el entorno de trabajo de Azure NetApp Files.</block>
@@ -155,27 +153,6 @@
   <block id="45dbe3c136df615d693b80183c277a3b" category="paragraph">El nuevo volumen se agrega al entorno de trabajo.</block>
   <block id="eaae7feedfb57c4ccdcc53c186726c56" category="inline-xref">montaje del volumen de cloud</block>
   <block id="2f8952d0a4fb138ef90f78fb9a50fe88" category="paragraph">Continúe con <block ref="b0f2178360372267ad19e1e8e4741e99" category="inline-xref-macro-rx"></block>.</block>
-  <block id="a37f6000ecd62b3a2058de32fa603d0a" category="section-title">Crear volúmenes a partir de plantillas</block>
-  <block id="4a856903cf54bbb57bd5703d54583103" category="paragraph">Si su organización ha creado plantillas de volúmenes de Azure NetApp Files para poder implementar volúmenes optimizados para los requisitos de cargas de trabajo de determinadas aplicaciones, siga los pasos de esta sección.</block>
-  <block id="8d69897f39fda1e4779ad2d9ff4939c4" category="paragraph">La plantilla debería facilitar el trabajo porque ciertos parámetros de volumen ya se definirán en la plantilla, como el pool de capacidad, el tamaño, el protocolo, el vnet y la subred donde debería residir el volumen, entre otros. Cuando ya hay un parámetro predefinido, puede saltar al siguiente parámetro de volumen.</block>
-  <block id="f1a38681016ccf53a8d2c2fad98c7db2" category="list-text">En la página lienzo, haga clic en el entorno de trabajo Azure NetApp Files en el que desea aprovisionar un volumen.</block>
-  <block id="024205acf9405311336c02bbd2193b70" category="inline-image-macro">Botón más</block>
-  <block id="f96393c48de5eddb1a2818124e9040b6" category="list-text">Haga clic en <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> &gt; *Añadir volumen de plantilla*.</block>
-  <block id="74099e7b70c30e3a55db543cda9bfc1e" category="inline-image-macro">Captura de pantalla que muestra cómo añadir un volumen nuevo de una plantilla.</block>
-  <block id="098587c5859901ecc32e7a709cb2129f" category="paragraph"><block ref="098587c5859901ecc32e7a709cb2129f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5b33742921c3a09b3c0916cff2d87632" category="list-text">En la página _Select Template_, seleccione la plantilla que desea utilizar para crear el volumen y haga clic en *Siguiente*.</block>
-  <block id="41fdbb8293e553892079d0e7ad8a9ad9" category="inline-image-macro">Captura de pantalla de las plantillas de aplicación disponibles.</block>
-  <block id="e9be4d5050c4e00aff6426b7045f1b6a" category="paragraph"><block ref="e9be4d5050c4e00aff6426b7045f1b6a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8675916eaff2fb10955e8a3b1b14108f" category="paragraph">Aparece la página _define Parameters_.</block>
-  <block id="19f5b7f92268b2f8e63e4083819666c9" category="inline-image-macro">Captura de pantalla que muestra una plantilla en blanco que debe rellenar para crear un volumen.</block>
-  <block id="93fdd25da4e72c932b99d601b637202f" category="paragraph"><block ref="93fdd25da4e72c932b99d601b637202f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="31f425aaa6a26f3fc5e635704753602f" category="paragraph">*Nota:* puede hacer clic en la casilla de verificación *Mostrar parámetros de sólo lectura* para mostrar todos los campos bloqueados por la plantilla si desea ver los valores de esos parámetros. De forma predeterminada, estos campos predefinidos están ocultos y sólo se muestran los campos que debe completar.</block>
-  <block id="2bc51d1d472e80f2611fe5ff280c4ebe" category="list-text">Haga clic en *Ejecutar plantilla* después de definir todos los parámetros necesarios para este volumen.</block>
-  <block id="71fe7750eaf8ad346bfa5f8d17e350aa" category="paragraph">BlueXP aprovisiona el volumen y muestra una página para que pueda ver el progreso.</block>
-  <block id="40136e65ff57723941fc2af2bf21d54a" category="inline-image-macro">Captura de pantalla que muestra el progreso de la creación de un nuevo volumen a partir de la plantilla.</block>
-  <block id="4ad07dd99a58c5fa556826f4f972a56e" category="paragraph"><block ref="4ad07dd99a58c5fa556826f4f972a56e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3fcf4599fd910141dcd628a7411238d5" category="paragraph">A continuación, se añade el nuevo volumen al entorno de trabajo.</block>
-  <block id="0753d577f87c3ce7385e295a5cc23407" category="paragraph">Continúe con el montaje del volumen de cloud.</block>
   <block id="2a4a19d3d732c5f7aa35fa729ac0d8ac" category="section-title">Monte los volúmenes</block>
   <block id="cabcbbac4437e0dbf2eec9f1d07d973b" category="paragraph">Acceda a las instrucciones de montaje desde BlueXP para que pueda montar el volumen en un host.</block>
   <block id="8298547bbbd227879ca27d72eedeb07a" category="list-text">Pase el ratón sobre el volumen y seleccione *montar el volumen*.</block>
@@ -226,7 +203,6 @@
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">Si tiene una cuenta de nivel de cliente, puede añadir una o varias cuentas de NSS.</block>
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">Si tiene una cuenta de partner o distribuidor, puede añadir una o varias cuentas de NSS, pero no se podrán añadir junto con las cuentas de nivel de cliente.</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">Una captura de pantalla del menú Ayuda en el que Soporte es la primera opción de la lista</block>
-  <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">NetApp utiliza Microsoft Azure Active Directory como proveedor de identidades para servicios de autenticación específicos para soporte y licencias.</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">En la página de inicio de sesión, proporcione su dirección de correo electrónico registrada en el sitio de soporte de NetApp y contraseña para realizar el proceso de autenticación.</block>
   <block id="cbc6cc3bb022583403171b447b2a962c" category="paragraph">Estas acciones permiten a BlueXP utilizar su cuenta NSS para cosas como descargas de licencias, verificación de actualizaciones de software y futuros registros de soporte.</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">Tenga en cuenta lo siguiente:</block>
@@ -387,8 +363,6 @@
   <block id="cdf14d2156528231a5dbd12ad5c95d3f" category="list-text">Seleccione para cambiar las columnas que aparecen en la tabla <block ref="b574dd55d604ddb721d869a0fc302007" category="inline-image-macro-rx" type="image"></block> y, a continuación, seleccione las columnas que desea mostrar.</block>
   <block id="348552521b849746260fe8d296d34c15" category="list-text">Seleccione para gestionar un caso existente <block ref="566c029d89e7d5421080767a37bf443e" category="inline-image-macro-rx" type="image"></block> y seleccione una de las opciones disponibles:</block>
   <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">*Cerrar caso*: Proporciona detalles sobre por qué estás cerrando el caso y selecciona *Cerrar caso*.</block>
-  <block id="2ed978d3284ec9503be973d54abd5507" category="inline-xref">cree volúmenes</block>
-  <block id="d3685c976ba0d8be55399dcb8023edd0" category="list-text">Agregue valores para todos los parámetros que no estén codificados de forma rígida desde la plantilla. Consulte <block ref="94c7da97446a939ca89601c141819f83" category="inline-xref-macro-rx"></block> Para obtener detalles sobre todos los parámetros que se necesitan completar en la implementación de un volumen de Azure NetApp Files.</block>
   <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
   <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
   <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
@@ -431,4 +405,8 @@
   <block id="ffbef04ea072f1887001d16556efc89e" category="summary">Comience a usar Azure NetApp Files configurando una aplicación Microsoft Entra y creando un entorno de trabajo.</block>
   <block id="4825dc1eb26b7e7de707e1565fcb2692" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> <block ref="ceb71631b57ba9aa78ded8805cd28ebf" category="inline-link-macro-rx"></block></block>
   <block id="0e63ec6ed03b6c3507b12798044de570" category="paragraph">Desde Azure, otorgue permisos a una aplicación de Microsoft Entra y copie el ID de aplicación (cliente), el ID de directorio (inquilino) y el valor de un secreto de cliente.</block>
+  <block id="9d5b3307d5a7d5905623bf21ab049bdd" category="section-title">22 de abril de 2024</block>
+  <block id="2d177a5ce778fe0e6f460ac5e9449f84" category="section-title">Ya no se admiten plantillas de volumen</block>
+  <block id="14b1c6bd63866971a4cd695c3c2a3d80" category="paragraph">Ya no puede crear un volumen a partir de una plantilla. Esta acción se asoció con el servicio de corrección de BlueXP, que ya no está disponible.</block>
+  <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetApp utiliza Microsoft Entra ID como proveedor de identidad para los servicios de autenticación específicos de soporte y licencias.</block>
 </blocks>
