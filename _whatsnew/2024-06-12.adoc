@@ -1,0 +1,17 @@
+= Se requiere un nuevo permiso
+:allow-uri-read: 
+
+
+
+
+=== Se requiere un nuevo permiso
+
+Ahora se necesita el siguiente permiso para gestionar Azure NetApp Files Volumes desde BlueXP:
+
+Microsoft.Network/virtualNetworks/subnets/read
+
+Se necesita este permiso para leer una subred de red virtual.
+
+Si actualmente está gestionando Azure NetApp Files desde BlueXP, debe añadir este permiso al rol personalizado asociado a la aplicación Microsoft Entra que creó anteriormente.
+
+https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-set-up-azure-ad.html["Aprenda a configurar una aplicación de Microsoft Entra y ver los permisos de rol personalizados"].
