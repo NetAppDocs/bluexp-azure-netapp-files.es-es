@@ -22,9 +22,37 @@ Descubra las novedades de Azure NetApp Files en BlueXP.
 
 
 
-=== Las funciones de red ahora son compatibles con BlueXP 
+=== Las funciones de red ahora son compatibles con BlueXP
 
 Al configurar un volumen en Azure NetApp Files desde BlueXP , ahora se pueden indicar las funciones de red. Se alinea con la funcionalidad disponible en la Azure NetApp Files nativa.
+
+
+
+== bbe4d8abcc3519b138a73b8e46ee2119
+
+
+
+=== Se requiere un nuevo permiso
+
+Ahora se necesita el siguiente permiso para gestionar Azure NetApp Files Volumes desde BlueXP:
+
+Microsoft.Network/virtualNetworks/subnets/read
+
+Se necesita este permiso para leer una subred de red virtual.
+
+Si actualmente está gestionando Azure NetApp Files desde BlueXP, debe añadir este permiso al rol personalizado asociado a la aplicación Microsoft Entra que creó anteriormente.
+
+https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-set-up-azure-ad.html["Aprenda a configurar una aplicación de Microsoft Entra y ver los permisos de rol personalizados"].
+
+
+
+== 9d5b3307d5a7d5905623bf21ab049bdd
+
+
+
+=== Ya no se admiten plantillas de volumen
+
+Ya no puede crear un volumen a partir de una plantilla. Esta acción se asoció con el servicio de corrección de BlueXP, que ya no está disponible.
 
 
 
