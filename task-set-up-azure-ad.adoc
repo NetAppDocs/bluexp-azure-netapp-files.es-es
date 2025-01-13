@@ -156,7 +156,7 @@ image:screenshot_settings_icon.gif["Captura de pantalla que muestra el icono Con
 *** ID de aplicación (cliente)
 *** ID de directorio (inquilino)
 +
-Debería haber capturado esta información cuando usted <<Create the AD application,Se creó la aplicación AD>>.
+Usted debe haber capturado esta información cuando usted <<create-AD-application,Se creó la aplicación AD>>.
 
 
 

@@ -41,9 +41,15 @@ image:screenshot_anf_create_account.png["Una captura de pantalla de los campos n
 Si crea un pool de capacidad nuevo, debe especificar un tamaño y seleccionar un https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-service-levels["nivel de servicio"^].
 
 +
-El tamaño mínimo del pool de capacidad es de 4 TB. Es posible especificar un tamaño en múltiplos de 4 TB.
+El tamaño mínimo del pool de capacidad es de 1 TB.
 
-** *Detalles y etiquetas*: Introduzca un nombre y un tamaño de volumen, el vnet y la subred donde debería residir el volumen y, opcionalmente, especifique etiquetas para el volumen.
+** *Detalles y etiquetas*: Introduzca el nombre y el tamaño del volumen, el vnet y la subred donde debe residir el volumen y, opcionalmente, especifique etiquetas para el volumen. Elija la red *Estándar* o *Básico*. *Estándar* soporta funciones de red virtual (vnet) mientras que *Basic* tiene límites de IP reducidos (<1000) y no hay funciones vnet adicionales para el volumen.
++
+El siguiente ejemplo describe un volumen llamado *demo-s*, no aplica ninguna etiqueta e indica que el volumen utilizará la red *Standard*, que admite funciones vnet.
+
++
+image:screenshot-details-tags-create-volume.gif["Una captura de pantalla de un volumen de ejemplo."]
+
 ** *Protocolo*: Elija el protocolo NFS o SMB e introduzca la información necesaria.
 +
 A continuación encontrará un ejemplo de detalles de NFS.
@@ -62,9 +68,6 @@ image:screenshot_anf_smb.gif["Captura de pantalla de los campos necesarios para 
 . Si desea que este volumen se cree según una copia de Snapshot de un volumen existente, seleccione la copia de Snapshot en la lista desplegable Snapshot Name.
 . Haga clic en *Añadir volumen*.
 
-
-.Resultado
-El nuevo volumen se agrega al entorno de trabajo.
 
 Continúe con <<Monte los volúmenes,montaje del volumen de cloud>>.
 
