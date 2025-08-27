@@ -51,7 +51,7 @@ Tenga en cuenta que el servicio Azure NetApp Files y no BlueXP mantienen la susc
 
 == Regiones admitidas
 
-https://cloud.netapp.com/cloud-volumes-global-regions["Consulte las regiones de Azure admitidas"^]
+https://bluexp.netapp.com/cloud-volumes-global-regions["Consulte las regiones de Azure admitidas"^]
 
 
 
@@ -63,7 +63,7 @@ En el caso de los problemas de soporte técnico asociados con Azure NetApp Files
 
 == Enlaces relacionados
 
-* https://cloud.netapp.com/azure-netapp-files["Sitio web de NetApp BlueXP: Azure NetApp Files"^]
-* https://docs.microsoft.com/azure/azure-netapp-files/["Documentación de Azure NetApp Files"^]
-* https://docs.netapp.com/us-en/bluexp-copy-sync/index.html["Documentación de copia y sincronización de BlueXP"^]
+* link:https://bluexp.netapp.com/azure-netapp-files["Sitio web de NetApp BlueXP: Azure NetApp Files"^]
+* link:https://learn.microsoft.com/azure/azure-netapp-files/["Documentación de Azure NetApp Files"^]
+* link:https://docs.netapp.com/us-en/bluexp-copy-sync/index.html["Documentación de copia y sincronización de BlueXP"^]
 
